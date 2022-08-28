@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #495057;
+}
+.bank-interface{
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.main-desktopcolor{
+  width: 100%;
+  height: 100%;
+}
+.credential-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  /* position: relative; */
+  z-index: 0;
+}
+.img-container{
+  position: relative;
+  /* z-index: 0; */
+}
+.credential-container{
+  width: 400px;
+  /* background-color: blue; */
+}
+.credential-details{
+  /* width: 500px; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.cardholder-details{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+.input-values{
+  width: 100%;
+  height: 40px;
+  color:#495057;
+  padding-left: 4px;
+  background-color: #f8f9fa;
+  font-size: 14px;
+  border: 1px solid  #adb5bd;
+  /* margin-left: 8px; */
+  /* text-transform: uppercase; */
+  /* text-align: center; */
+}
+.notify-name, .notify-number, .notify-date, .notify-year, .notify-cvc{
+  font-size: 18px;
+  color: #e03131;
+}
+
+.input-values:active{
+  border:1px solid #e03131;
+}
+.secret-details{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* align-items: center; */
+  /* justify-content:flex-end; */
+}
+.secret-depth{
+  display: grid;
+  grid-template-columns: auto auto 150px;
+  column-gap: 10px;
+}
+.secret-depth-items{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* background-color: rgb(228, 126, 126); */
+  /* align-items: center;
+  justify-content: center; */
+}
+.credential-container:last-child{
+  /* margin-top: 25px; */
+}
+.btn{
+  /* background-color: yellow; */
+  margin-top: 15px;
+  height: 40px;
+  color: #000;
+  font-size: 14px;
+  border: 1px solid  #adb5bd;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+.btn:hover, .btn:active{
+  background-color: #410e4e;
+  color: #fff;
+  font-weight: 700;
+  
+}
+.relative-img{
+  position: absolute;
+  z-index: 1;
+}
+.img1{
+  bottom: 21%;
+  transform: translate(50%, 0%);
+}
+.img2{
+  top: 21%;
+  transform: translate(20%, 0%);
+}
+.greetings{
+  width: 300px;
+  /* background-color: orangered; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.greetings img{
+  width: 40px;
+}
+.greetings button{
+  width: 100%;
+}
+.hidden{
+  display: none;
+}
